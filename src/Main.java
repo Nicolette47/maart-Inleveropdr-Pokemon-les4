@@ -4,7 +4,7 @@ public class Main {
         FirePokemon burnMan = new FirePokemon("Burnman", 3, 10, 80, "benzine", 5);
         WaterPokemon blupie = new WaterPokemon("blupie", 10, 3, 5, 70);
         GrassPokemon leafpie = new GrassPokemon("Leafpie", 10, 3, 10, 20);
-        ElectricPokemon blizzard = new ElectricPokemon("blizzard", 10, 3, 80, "flashwhite");
+        ElectricPokemon blizzard = new ElectricPokemon("blizzard", 10, 3, 80, "flashingwitte");
 
         System.out.println();
         System.out.println("mijn naam is : " + burnMan.getName());
@@ -13,7 +13,7 @@ public class Main {
         System.out.print(burnMan.getName());
         burnMan.flameThrower(burnMan.getTemperatureAttack());
         System.out.print(burnMan.getName());
-        burnMan.pyroBall(burnMan.getAmountOfBalls());
+        burnMan.pyroBall();
 
         System.out.println();
         System.out.println("mijn naam is : " + blupie.getName() );
@@ -25,10 +25,17 @@ public class Main {
         System.out.println();
         System.out.println("mijn naam is : " + leafpie.getName());
         leafpie.sound();
-        System.out.println(" en ik ben wel " + leafpie.getHeight() + "centimeter lang. ");
+        System.out.println("en ik ben wel " + leafpie.getHeight() + " centimeter lang. ");
         System.out.print(leafpie.getName());
         leafpie.leaveBlade(leafpie.getDefenseStrength());
+        leafpie.reward(leafpie.getName(), leafpie.getHp());
 
+        System.out.println();
+        System.out.println("mijn naam is : " + blizzard.getName());
+        blizzard.sound();
+        System.out.println("en ik heb een " + blizzard.getColorSkin() + " huid.");
+        blizzard.tackle(blizzard.getName());
+        blizzard.electroBall(blizzard.getVoltPower());
 
     }
 }

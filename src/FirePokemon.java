@@ -7,6 +7,7 @@ public class FirePokemon extends PokemonGeneral {
         super(name, level, hp);
         this.temperatureAttack = temperatureAttack;
         this.food = food;
+        this.amountOfBalls = amountOfBalls;
     }
 
 
@@ -19,9 +20,11 @@ public class FirePokemon extends PokemonGeneral {
         System.out.println( " gebruikt de flamethrower met een temperatuur van " + temperatureAttack);
     }
 
-    public void pyroBall( int amountOfBalls) {
-        if (amountOfBalls > 0) {
-            System.out.println( " gooit nu een pyroball");
+    public void pyroBall( ) {
+        if (this.amountOfBalls > 0) {
+            System.out.println( " gooit nu een pyroball. ");
+            this.amountOfBalls--;
+            System.out.println("Je hebt nog " + getAmountOfBalls()  + " over. ");
         } else {
             System.out.println( " heeft geen pyroballs meer om mee te gooien");
         }

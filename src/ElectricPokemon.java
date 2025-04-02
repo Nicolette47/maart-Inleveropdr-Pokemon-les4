@@ -17,11 +17,11 @@ public class ElectricPokemon extends PokemonGeneral {
 
     @Override
     public void tackle(String name) {
-        System.out.println(name + " tackelt je nu en je krijgt er een stroomstoot bij en verliest 2 Hp");
+        System.out.println(name + " tackelt je nu en je krijgt er een stroomstoot extra bij. Je verliest 2 Hp");
     }
 
     public void electroBall(int voltPower) {
-        System.out.println(this.getName() + "gooit een electroball van " + voltPower + "volt.");
+        System.out.println(this.getName() + " gooit een electroball van " + voltPower + " volt.");
     }
 
     public int getVoltPower() {
