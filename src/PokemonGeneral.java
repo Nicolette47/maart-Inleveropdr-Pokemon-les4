@@ -1,4 +1,4 @@
-public class PokemonGeneral {
+abstract class PokemonGeneral {
     private String name;
     private String type;
     private int hp;
@@ -10,17 +10,16 @@ public class PokemonGeneral {
         this.level = level;
     }
 
-    public void sound () {
-        System.out.println( "Elke pokemon maakt zijn eigen geluid in de aanval of verdediging om extra kracht te geven");
-    }
+    abstract void sound();
 
     public void tackle(String name) {
-        System.out.println(name + "doet je nu tackelen");
+
+        System.out.println(name + " doet je nu tackelen");
     }
 
-    public void reward(String name, int hp) {
+    public void reward(int hp) {
         this.hp = hp + 10;
-        System.out.println(" Gefeliciteerd, je hebt gewonnen " + name + ". Als beloning krijg je 10 healthpoints erbij. ");
+        System.out.println(" Gefeliciteerd, je hebt gewonnen " + this.name + ". Als beloning krijg je 10 healthpoints erbij. ");
         System.out.println(" je nieuwe hp is: " + hp);
     }
 

@@ -14,12 +14,14 @@ public class Main {
         burnMan.flameThrower(burnMan.getTemperatureAttack());
         System.out.print(burnMan.getName());
         burnMan.pyroBall();
+        burnMan.tackle(burnMan.getName());
 
         System.out.println();
         System.out.println("mijn naam is : " + blupie.getName() );
         blupie.sound();
         System.out.println("en ik weeg wel " + blupie.getWeight() + " kilogram!" );
         blupie.hydroPump(blupie.getSpeedWaterHydroPump());
+        blupie.tackle(blupie.getName());
         blupie.surf();
 
         System.out.println();
@@ -28,7 +30,8 @@ public class Main {
         System.out.println("en ik ben wel " + leafpie.getHeight() + " centimeter lang. ");
         System.out.print(leafpie.getName());
         leafpie.leaveBlade(leafpie.getDefenseStrength());
-        leafpie.reward(leafpie.getName(), leafpie.getHp());
+        leafpie.tackle(blupie.getName());
+        leafpie.reward(leafpie.getHp());
 
         System.out.println();
         System.out.println("mijn naam is : " + blizzard.getName());

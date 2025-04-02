@@ -20,9 +20,9 @@ public class GrassPokemon extends PokemonGeneral {
     }
 
     @Override
-    public void reward(String name, int hp) {
+    public void reward( int hp) {
         this.setHp(this.getHp() + 20);
-        System.out.println("Gefeliciteerd, je hebt gewonnen. " + name + " dit is zo knap, omdat je maar zo klein en fragiel bent. Als beloning krijg je 20 healthpoints erbij. ");
+        System.out.println("Gefeliciteerd, je hebt gewonnen. " + this.getName() + " dit is zo knap, omdat je maar zo klein en fragiel bent. Als beloning krijg je 20 healthpoints erbij. ");
         System.out.println(" je nieuwe hp is: " + this.getHp());
     }
 
